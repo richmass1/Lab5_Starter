@@ -20,6 +20,16 @@ function init() {
   });
 
   volumeSlider.addEventListener("change", (event) => {
-    // TODO
+    const vol = event.target.value;
+    audioPlayer.volume = vol / 100.0;
+    if (vol == 0) {
+      volumeIcon.src = "./assets/icons/volume-level-0.svg";
+    } else if (vol < 33) {
+      volumeIcon.src = "./assets/icons/volume-level-1.svg";
+    } else if (vol < 67) {
+      volumeIcon.src = "./assets/icons/volume-level-2.svg";
+    } else {
+      volumeIcon.src = "./assets/icons/volume-level-3.svg";
+    }
   });
 }

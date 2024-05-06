@@ -11,8 +11,8 @@ function init() {
   const volumeSlider = document.querySelector("input[type='range']")
 
   dropdown.addEventListener("change", (event) => {
-    hornImage.src = "/assets/images/" + event.target.value + ".svg"
-    audioPlayer.src = "/assets/audio/" + event.target.value + ".mp3"
+    hornImage.src = "./assets/images/" + event.target.value + ".svg"
+    audioPlayer.src = "./assets/audio/" + event.target.value + ".mp3"
   });
 
   playButton.addEventListener("click", (event) => {

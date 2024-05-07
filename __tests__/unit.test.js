@@ -62,11 +62,11 @@ test('test isStrongPassword 4', () => {
 // isDate
 
 test('test isDate 1', () => {
-  expect(isDate('22-33-4444')).toBe(true);
+  expect(isDate('22/33/4444')).toBe(true);
 });
 
 test('test isDate 2', () => {
-  expect(isDate('5-6-2024')).toBe(true);
+  expect(isDate('5/6/2024')).toBe(true);
 });
 
 test('test isDate 3', () => {

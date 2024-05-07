@@ -16,6 +16,10 @@ function init() {
   });
 
   playButton.addEventListener("click", (event) => {
+    const jsConfetti = new JSConfetti();
+    if (dropdown.value == "party-horn") {
+      jsConfetti.addConfetti();
+    }
     audioPlayer.play();
   });
 
